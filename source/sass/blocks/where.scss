@@ -1,3 +1,53 @@
 .where {
-  
+  position: relative;
+  padding: 50px 0 20px;
+  display: flex;
+}
+
+.where::after {
+  content:"Где?";
+  position: absolute;
+  color: $text-color-primary;
+  padding: 6px 70px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 195px;
+  height: 42px;
+  background-image: url("../img/mob/title-pink.svg");
+  background-repeat: no-repeat;
+  top: -1%;
+  left: 30%;
+  transform: translate(-50%, -13%);
+}
+
+.where__text {
+  text-align: center;
+  position: relative;
+}
+
+.where__content {
+  padding: 0 20px;
+
+}
+
+.where__content-name {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.where__map {
+  width: 200px;
+  height: 202px;
+}
+
+.where__text:after {
+  content:"";
+  position: absolute;
+  width: 228px;
+  height: 92px;
+  background-image: url("../img/mob/border-pink.svg");
+  background-repeat: no-repeat;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -13%);
 }

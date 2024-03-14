@@ -7,6 +7,7 @@
   background-position: center;
   // padding: 90px 19px 85px;
   box-sizing: border-box;
+  position: relative;
 
   @include resolution {
     background-image: url("../img/mob/banner-mob@2x.png");
@@ -25,5 +26,35 @@
 
 .header__btn {
   width: 40px;
-  height: 40px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  color: $text-color-lighten;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.header__title {
+  color: $text-color-lighten;
+  font-weight: inherit;
+  margin-top: 14%;
+  margin-left: 8%;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.header::after {
+  content:"";
+  position: absolute;
+  width: 395px;
+  height: 20px;
+  background-image: url("../img/mob/Line1.svg");
+  background-repeat: no-repeat;
+  bottom: -1%;
+  left: 50%;
+  transform: translate(-50%, -13%);
 }

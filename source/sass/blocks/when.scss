@@ -1,3 +1,39 @@
 .when {
-  
+  position: relative;
+  padding: 50px 0 20px;
+  margin-bottom:28px ;
+}
+
+.when::after {
+  content:"Когда?";
+  position: absolute;
+  color: $text-color-lighten;
+  padding: 6px 52px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 195px;
+  height: 42px;
+  background-image: url("../img/mob/title-brown.svg");
+  background-repeat: no-repeat;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -13%);
+}
+
+.when__text {
+  text-align: center;
+  position: relative;
+}
+
+
+.when__text:after {
+  content:"";
+  position: absolute;
+  width: 228px;
+  height: 92px;
+  background-image: url("../img/mob/border-pink.svg");
+  background-repeat: no-repeat;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -13%);
 }

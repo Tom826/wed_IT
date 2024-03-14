@@ -1,0 +1,29 @@
+.header {
+  background-image: url("../img/mob/banner-mob.png");
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  // padding: 90px 19px 85px;
+  box-sizing: border-box;
+
+  @include resolution {
+    background-image: url("../img/mob/banner-mob@2x.png");
+    background-size: 432px auto;
+    min-height: 198px;
+  }
+
+  @include tablet {
+    @include resolution {
+    background-image: url("../img/mob/banner-mob@2x.png");
+    background-size: auto;
+    min-height: 398px;
+    }
+  }
+}
+
+.header__btn {
+  width: 40px;
+  height: 40px;
+}

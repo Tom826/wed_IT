@@ -13,9 +13,6 @@ import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 import terser from 'gulp-terser';
 import ghPages from 'gh-pages';
-import path from 'path';
-
-//export const path = require('path');
 
 // Styles
 
@@ -56,7 +53,7 @@ export const optimizeImages = () => {
 }
 
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
 }
@@ -123,11 +120,11 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/*.html').on('change', browser.reload);
+  
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
-
+  gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 export const build = gulp.series(

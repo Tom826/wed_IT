@@ -1,7 +1,17 @@
+@import "./variables.scss";
 @import "./global.scss";
-.test {
-  color: red;
-}
-body {
-  background-color: tomato;
-}
+@import "./mixin.scss";
+@import "./fonts.scss";
+@import "./blocks/header.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/howto.scss";
+@import "./blocks/imgs.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/main.scss";
+@import "./blocks/page.scss";
+@import "./blocks/wear.scss";
+@import "./blocks/when.scss";
+@import "./blocks/where.scss";

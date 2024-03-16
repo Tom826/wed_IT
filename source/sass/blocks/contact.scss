@@ -1,3 +1,16 @@
 .contact {
-  
+  width: 44%;
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+  align-items: end ;
+}
+
+.contact__block > p {
+  margin: 0;
+}
+
+.contact__tg {
+  color: $text-color-primary;
+  // font-weight: 700;
 }

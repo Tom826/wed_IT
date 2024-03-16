@@ -27,14 +27,37 @@
 }
 
 .form__btn {
+  position: relative;
   background-color: #FFA8A8;
   display: block;
   width: 202px;
   height: 42px;
-  border-radius: 38%;
   color: $text-color-lighten;
   padding: 10px 48px;
   font-size: 20px;
   margin-left: auto;
   text-decoration: none;
+  border: 1px solid #ffa8a8;
+  border-radius: 15px;
+  box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
+  -webkit-box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
+  -moz-box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
+}
+
+.form__btn::before {
+  content:"";
+  position: absolute;
+  width: 105px;
+  height: 50px;
+  background-image: url("../img/mob/tyk.png");
+  background-repeat: no-repeat;
+  top: -55px;
+  right: -24px;
+}
+
+.form__btn:hover {
+  width: 190px;
+  height: 38px;
+  background-color: #e79090;
+  font-size: 16px;
 }

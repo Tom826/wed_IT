@@ -7,6 +7,18 @@
 }
 
 .footer__signature {
-  width: 44%;
+  width: 152px;
   font-size: 12px;
+  position: relative;
+}
+
+.footer__signature::after {
+  content:"";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/mob/heart.png");
+  background-repeat: no-repeat;
+  top: 58%;
+  right: 27%;
 }

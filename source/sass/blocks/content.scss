@@ -1,0 +1,11 @@
+.content {
+
+}
+
+.content__text {
+  display: block;
+}
+
+.content__text:not(:last-child) {
+  margin-bottom: 10px;
+}

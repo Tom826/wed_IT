@@ -1,7 +1,6 @@
 .format {
   position: relative;
   padding: 76px 0 20px;
-  margin-bottom:28px ;
 }
 
 .format::before {
@@ -18,4 +17,14 @@
   top: 15%;
   left: 65%;
   transform: translate(-50%, -13%);
+}
+
+.format-block {
+  display: flex;
+  gap: 0 6%;
+}
+
+.format__content {
+  width: 50%;
+  font-size: 13px;
 }

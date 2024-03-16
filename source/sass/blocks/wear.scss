@@ -1,3 +1,24 @@
 .wear {
-  
+  position: relative;
+  padding: 50px 0 20px;
+}
+
+.wear::before {
+  content:"Мне нечего надеть";
+  position: absolute;
+  color: $text-color-primary;
+  padding: 11px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 195px;
+  height: 42px;
+  background-image: url("../img/mob/title-pink.svg");
+  background-repeat: no-repeat;
+  top: 2%;
+  left: 30%;
+  transform: translate(-50%, -13%);
+}
+
+.wear__content {
+  padding: 0 20px;
 }

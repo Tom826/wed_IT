@@ -1,3 +1,11 @@
 .howto {
-  
+  display: flex;
+  padding: 0 20px;
+  gap: 0 12%;
+}
+
+.howto__item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
 }

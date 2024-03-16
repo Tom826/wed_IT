@@ -3,4 +3,8 @@
   font-weight: 400;
   font-size: 14px;
   color: $text-color-primary;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }

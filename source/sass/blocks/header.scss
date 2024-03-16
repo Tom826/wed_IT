@@ -5,7 +5,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 28% 11% 0;
+  padding: 16% 6% 0;
   box-sizing: border-box;
   position: relative;
 
@@ -16,6 +16,7 @@
   }
 
   @include tablet {
+    padding: 22% 6% 0;
     @include resolution {
     background-image: url("../img/mob/banner-mob@2x.png");
     background-size: auto;
@@ -41,10 +42,14 @@
 .header__title {
   color: $text-color-lighten;
   font-weight: inherit;
-  margin-top: 0;
+  margin-top: 40px;
   margin-left: 8%;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 30px;
+
+  @include tablet {
+    font-size: 33px;
+  }
 }
 
 .header::after {

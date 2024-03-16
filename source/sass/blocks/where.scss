@@ -2,6 +2,13 @@
   position: relative;
   padding: 50px 0 20px;
   display: flex;
+
+  @include tablet {
+    padding: 50px 80px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .where::after {
@@ -28,6 +35,10 @@
 .where__content {
   padding: 0 20px;
 
+  @include tablet {
+    font-size: 14px;
+    width: 50%;
+  }
 }
 
 .where__content-name {
@@ -54,4 +65,15 @@
 
 .where__content-info {
   font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.where__map {
+  @include tablet {
+    width: 380px;
+    height: 180px;
+  }
 }

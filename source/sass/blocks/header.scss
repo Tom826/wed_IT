@@ -23,6 +23,13 @@
     min-height: 398px;
     }
   }
+
+  @include desktop {
+    background-image: url("../img/banner-img-desc.png");
+    @include resolution {
+      background-image: url("../img/banner-img-desc@2x.png");
+    }
+  }
 }
 
 .header__btn {

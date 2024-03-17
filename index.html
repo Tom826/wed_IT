@@ -18,14 +18,28 @@
   </head>
 <body class="page">
   <header class="page__header header">
-    <!-- <button class="header__btn" type="button">
-      <svg width="31" height="24" viewBox="0 0 31 24" fill="red" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 2H28.25" stroke="white" stroke-width="4" stroke-linecap="round"/>
-        <path d="M2 12H28.25" stroke="white" stroke-width="4" stroke-linecap="round"/>
-        <path d="M2 22H28.25" stroke="white" stroke-width="4" stroke-linecap="round"/>
-        </svg>        
-      <span class="header__btn-text">menu</span>
-    </button> -->
+    <nav class="header__nav nav">      
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#when">Когда?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#where">где?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#format">Формат</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link--form" href="https://forms.gle/3UaBCDY3zVQKYM7f7">Я в деле!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#wear">Дресс-код</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gift">Подарки</a>
+        </li>
+      </ul>
+    </nav>
     <h1 class="header__title">Wedding<br>day</h1>
   </header>
   <main class="page__main main">
@@ -37,13 +51,13 @@
       <p class="intro__text">Привет! Совсем скоро мы женимся и хотим разделить этот праздник с близкими :)</p>
     </div>
     <div class="main__when when">
-      <h2 class="when__title visually-hidden">Когда?</h2>
+      <h2 class="when__title visually-hidden" id="when">Когда?</h2>
       <p class="when__text">02. 06. 2024 - воскресенье
         <br>с 17 до 22 часов
       </p>
     </div>
     <div class="main__where where">
-      <h2 class="where__title visually-hidden">Где?</h2>
+      <h2 class="where__title visually-hidden" id="where">Где?</h2>
       <p class="where__content">
         <span class="where__content-name">“БАХРУШИНЪ LOFT”</span>
         <span class="where__content-subtitle"><b>Адрес:</b                                                                                                      ><br></span>
@@ -56,7 +70,7 @@
       <a class="form__btn" target="blank" href="https://forms.gle/3UaBCDY3zVQKYM7f7">Я в деле!</a>
     </div>
     <div class="main__format format">
-      <h2 class="format__title visually-hidden">Какой формат?</h2>
+      <h2 class="format__title visually-hidden" id="format">Какой формат?</h2>
       <div class="format-block">
         <picture>
           <source media="(min-width: 768px)" srcset="img\format-img-desc.png, img\format-img-desc@2x.png 2x">
@@ -70,7 +84,7 @@
       </div>
     </div>
     <div class="main__wear wear">
-      <h2 class="wear__title visually-hidden">Мне нечего надеть</h2>
+      <h2 class="wear__title visually-hidden" id="wear">Мне нечего надеть</h2>
       <p class="wear__content content"> 
         <span class="content__text">Чёткий дресс-код будет для нас. </span>
         <span class="content__text">Вы - свободные люди. Поэтому сохраните это ощущение, но оставьте джинсы и худи для пятничного вечера в баре. 
@@ -120,7 +134,7 @@
       </div>
     </div>
     <div class="main__gift gift">
-      <h2 class="gift__title">Подарки?</h2>
+      <h2 class="gift__title" id="gift">Подарки?</h2>
       <p class="gift__content content">
         <span class="content__text">Лучший подарок - это внимание. Банально, но соответствует случаю. Мы будем просто рады вас видеть.</span>
         <span class="content__text">Если всё же планируете подарок, самый <b>подходящий</b> вариант для нас - это <b>денежный</b> презент. </span>

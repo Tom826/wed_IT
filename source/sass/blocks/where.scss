@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-around;
   }
+
+  @include desktop {
+    margin-top: 80px;
+  }
 }
 
 .where::after {
@@ -25,6 +29,15 @@
   top: -1%;
   left: 30%;
   transform: translate(-50%, -13%);
+
+  @include desktop {
+    background-image: url("../img/title-roze-desk.svg");
+    width: 332px;
+    height: 84px;
+    padding: 18px 118px;
+    font-size: 38px;
+    top: -14%;
+  }
 }
 
 .where__text {
@@ -44,11 +57,20 @@
 .where__content-name {
   display: block;
   margin-bottom: 10px;
+
+  @include desktop {
+    font-size: 22px;
+  }
 }
 
 .where__map {
   width: 200px;
   height: 202px;
+
+  @include desktop {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 .where__text:after {
@@ -60,7 +82,7 @@
   background-repeat: no-repeat;
   top: -1%;
   left: 50%;
-  transform: translate(-50%, -13%);
+  transform: translate(-50%, -13%);  
 }
 
 .where__content-info {
@@ -69,7 +91,17 @@
   @include tablet {
     font-size: 14px;
   }
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
+
+  .where__content-subtitle {
+    @include desktop {
+      font-size: 18px;
+    }
+  }
 
 .where__map {
   @include tablet {

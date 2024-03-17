@@ -25,10 +25,7 @@
   }
 
   @include desktop {
-    background-image: url("../img/banner-img-desc.png");
-    @include resolution {
-      background-image: url("../img/banner-img-desc@2x.png");
-    }
+    padding: 10% 6% 0;
   }
 }
 
@@ -57,6 +54,10 @@
   @include tablet {
     font-size: 33px;
   }
+
+  @include desktop {
+    margin-left: 22%;
+  }
 }
 
 .header::after {
@@ -69,4 +70,12 @@
   bottom: -1%;
   left: 50%;
   transform: translate(-50%, -13%);
+
+  @include desktop {
+    background-image: url("../img/Line1-desc.svg");
+    width: 1095px;
+    height: 52px;
+    bottom: -5%;
+    left: 54%;
+  }
 }

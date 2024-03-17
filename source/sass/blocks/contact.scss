@@ -14,6 +14,10 @@
   @include tablet {
     width: 180px;
   }
+
+  @include tablet {
+    width: 120px;
+  }
 }
 
 .contact__tg {

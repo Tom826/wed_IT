@@ -20,6 +20,15 @@
   top: 15%;
   left: 65%;
   transform: translate(-50%, -13%);
+
+  @include desktop {
+    background-image: url("../img/title-br2-desk.svg");
+    width: 380px;
+    height: 85px;
+    padding: 18px 30px;
+    font-size: 34px;
+    text-align: center;
+  }
 }
 
 .format-block {
@@ -31,6 +40,10 @@
     align-items: center;
     gap: 0 10%;
   }
+
+  @include desktop {
+    margin-top: 30px;
+  }
 }
 
 .format__content {
@@ -39,5 +52,16 @@
 
   @include tablet {
     font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.format__img {
+  @include desktop {
+    width: 250px;
+    height: auto;
   }
 }

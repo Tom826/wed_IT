@@ -4,8 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @include tablet {
     padding: 6px 80px;
+  }
+
+  @include tablet {
+    padding: 6px 180px;
   }
 }
 

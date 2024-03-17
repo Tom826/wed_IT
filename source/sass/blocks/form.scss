@@ -6,6 +6,10 @@
   @include tablet {
     padding: 5% 30%;
   }
+
+  @include desktop {
+    padding: 5% 33%;
+  }
 }
 
 .form::before {
@@ -21,6 +25,10 @@
   @include tablet {
     left: 18%;
     top: 0;
+  }
+
+  @include desktop {
+    left: 22%;
   }
 }
 
@@ -38,6 +46,10 @@
     right: 18%;
     bottom: -14%;
   }
+
+  @include desktop {
+    right: 22%;
+  }
 }
 
 .form__btn {
@@ -47,7 +59,7 @@
   width: 202px;
   height: 42px;
   color: $text-color-lighten;
-  padding: 10px 48px;
+  padding: 8px 48px;
   font-size: 20px;
   margin-left: auto;
   text-decoration: none;
@@ -56,6 +68,13 @@
   box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
   -webkit-box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
   -moz-box-shadow: 7px 7px 22px -6px rgba(82,84,83,1);
+
+  @include desktop {
+    width: 262px;
+    height: 62px;
+    font-size: 30px;
+    padding: 10px 48px;
+  }
 }
 
 .form__btn::before {
@@ -74,4 +93,5 @@
   height: 38px;
   background-color: #e79090;
   font-size: 16px;
+  padding: 8px 50px;
 }

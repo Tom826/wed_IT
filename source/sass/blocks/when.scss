@@ -18,6 +18,14 @@
   top: -1%;
   left: 50%;
   transform: translate(-50%, -13%);
+
+  @include desktop {
+    background-image: url("../img/title-brown-desk.svg");
+    width: 270px;
+    height: 84px;
+    padding: 18px 60px;
+  font-size: 38px;
+  }
 }
 
 .when__text {
@@ -26,6 +34,12 @@
 
   @include tablet {
     font-size: 14.5px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+    padding-top: 22px;
+    font-size: 22px;
   }
 }
 
@@ -42,7 +56,10 @@
   transform: translate(-50%, -13%);
 
   @include desktop {
-    width: 630px;
+    width: 485px;
+    height: 144px;
     background-image: url("../img/border-pink-desk.svg");
+    top: -1%;
+    left: 50%;
   }
 }

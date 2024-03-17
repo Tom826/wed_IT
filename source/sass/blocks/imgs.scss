@@ -15,6 +15,10 @@
   @include tablet {
     left: 28%;
   }
+
+  @include desktop {
+    left: 24%;
+  }
 }
 
 

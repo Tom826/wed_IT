@@ -24,4 +24,8 @@
   @include tablet {
     width: 220px;
   }
+
+  @include desktop {
+    width: 250px;
+  }
 }

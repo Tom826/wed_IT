@@ -20,4 +20,9 @@
     margin: 0 auto;
     padding: 18px 50px;
   }
+
+  @include desktop {
+    padding: 14px 36px;
+    font-size: 30px;
+  }
 }

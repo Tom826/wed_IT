@@ -5,6 +5,10 @@
   @include tablet {
     padding: 50px 80px 20px;
   }
+
+  @include desktop {
+    margin-top: 60px;
+  }
 }
 
 .wear::before {
@@ -21,6 +25,16 @@
   top: 2%;
   left: 30%;
   transform: translate(-50%, -13%);
+
+  @include desktop {
+    background-image: url("../img/title-roze2-desk.svg");
+    width: 500px;
+    height: 77px;
+    padding: 16px 46px;
+    font-size: 38px;
+    top: -4%;
+    left: 35%;
+  }
 }
 
 .wear__content {

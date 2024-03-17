@@ -17,6 +17,7 @@
 
   @include tablet {
     padding: 22% 6% 0;
+    min-height: 324px;
     @include resolution {
     background-image: url("../img/mob/banner-mob@2x.png");
     background-size: auto;
@@ -26,6 +27,7 @@
 
   @include desktop {
     padding: 10% 6% 0;
+    min-height: 400px;
   }
 }
 

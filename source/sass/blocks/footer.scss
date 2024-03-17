@@ -10,7 +10,23 @@
   }
 
   @include desktop {
-    padding: 6px 180px;
+    padding: 1% 10%;
+  }
+}
+
+.footer-block {
+  display: flex;
+  max-width: 450px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+    @include tablet {
+      max-width: 768px;
+    }
+
+  @include desktop{
+    max-width: 1200px;
   }
 }
 

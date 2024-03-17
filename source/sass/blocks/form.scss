@@ -2,6 +2,10 @@
   position: relative;
   text-transform: uppercase;
   padding: 20px 60px;
+
+  @include tablet {
+    padding: 5% 30%;
+  }
 }
 
 .form::before {
@@ -13,6 +17,11 @@
   background-repeat: no-repeat;
   top: -8%;
   left: 0;
+
+  @include tablet {
+    left: 18%;
+    top: 0;
+  }
 }
 
 .form::after {
@@ -24,6 +33,11 @@
   background-repeat: no-repeat;
   bottom: -26%;
   right: 4%;
+
+  @include tablet {
+    right: 18%;
+    bottom: -14%;
+  }
 }
 
 .form__btn {

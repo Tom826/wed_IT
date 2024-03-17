@@ -1,5 +1,9 @@
 .gift {
   padding: 0 20px 30px;
+
+  @include tablet {
+    padding: 0 80px 30px;
+  }
 }
 
 .gift__title {
@@ -11,4 +15,9 @@
   padding: 20px 55px;
   margin-top: 0;
   margin-left: 15%;
+
+  @include tablet {
+    margin: 0 auto;
+    padding: 18px 50px;
+  }
 }

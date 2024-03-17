@@ -10,7 +10,20 @@
   margin: 0;
 }
 
+.contact__block {
+  @include tablet {
+    width: 180px;
+  }
+}
+
 .contact__tg {
   color: $text-color-primary;
   // font-weight: 700;
+}
+
+.contact__tg-icon {
+  width: 61px;
+  @include tablet {
+    width: 35px;
+  }
 }

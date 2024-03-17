@@ -11,6 +11,10 @@
   top: 21%;
   left: 38%;
   transform: translate(-50%, -13%);
+
+  @include tablet {
+    left: 28%;
+  }
 }
 
 
@@ -25,7 +29,12 @@
   height: auto;
 }
 
+
 .imgs__item--y {
   width: 200px;
   height: auto;
+}
+
+.imgs__item--y:last-of-type {
+  width: 178px;
 }

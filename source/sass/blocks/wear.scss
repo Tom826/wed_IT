@@ -1,6 +1,10 @@
 .wear {
   position: relative;
   padding: 50px 0 20px;
+
+  @include tablet {
+    padding: 50px 80px 20px;
+  }
 }
 
 .wear::before {

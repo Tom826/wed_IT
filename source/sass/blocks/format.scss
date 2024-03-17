@@ -1,6 +1,9 @@
 .format {
   position: relative;
   padding: 76px 0 20px;
+  @include tablet {
+    padding: 76px 88px 20px;
+  }
 }
 
 .format::before {
@@ -22,9 +25,19 @@
 .format-block {
   display: flex;
   gap: 0 6%;
+
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+    gap: 0 10%;
+  }
 }
 
 .format__content {
   width: 50%;
   font-size: 13px;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
